@@ -13,7 +13,7 @@ function playGame()
 {
    let humanSelection = getHumanChoice();
    if (humanSelection === null) {
-    return; 
+    exit(1);
 }
    let computerSelection = getComputerChoice();
 playRound(humanSelection,computerSelection);
@@ -32,7 +32,7 @@ else {
 };
 function getComputerChoice()
 {
-    return Math.floor(Math.random() * 4);
+    return Math.floor(Math.random() * 5);
 };
 
 function playRound(humanSelection,computerSelection)
