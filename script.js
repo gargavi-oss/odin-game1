@@ -1,4 +1,6 @@
+let userName = prompt("Enter your name to play the game : ");
 let userRound = prompt("Enter number of rounds you want to play in game : ");
+
 
 let humanScore = 0;
 let computerScore = 0;
@@ -69,8 +71,8 @@ function result(humanScore,computerScore)
         else{
          alert("You lost the Game !");
         }
-
-        alert("Human Score = "+ `${humanScore}\n`+
+        
+        alert(`${userName.toUpperCase} Score = `+ `${humanScore}\n`+
             "Computer Score = "+ `${computerScore}`
       );
 };
