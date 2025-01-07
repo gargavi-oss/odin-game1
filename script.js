@@ -22,9 +22,9 @@ function getHumanChoice()
 {
     let userInput = prompt("Enter rock,paper,or scissor to play game :");
 userInput = userInput.toLowerCase();
-if(userInput=='rock') return 0;
-else if(userInput == 'paper') return 1;
-else if(userInput == 'scissor') return 2;
+if(userInput=='rock') return 1;
+else if(userInput == 'paper') return 2;
+else if(userInput == 'scissor') return 3;
 
 else {
     alert("Invalid input! Please enter rock, paper, or scissor.");
@@ -32,7 +32,7 @@ else {
 };
 function getComputerChoice()
 {
-    return Math.floor(Math.random() * 3);
+    return Math.floor(Math.random() * 4);
 };
 
 function playRound(humanSelection,computerSelection)
