@@ -72,7 +72,7 @@ function result(humanScore,computerScore)
          alert("You lost the Game !");
         }
         
-        alert(`${userName.toUpperCase} Score = `+ `${humanScore}\n`+
+        alert(`${userName.toUpperCase()} Score = `+ `${humanScore}\n`+
             "Computer Score = "+ `${computerScore}`
       );
 };
